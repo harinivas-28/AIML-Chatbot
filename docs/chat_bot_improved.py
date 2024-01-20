@@ -89,7 +89,7 @@ def main():
         user_question=st.empty()
         
 
-    with open("https://raw.githubusercontent.com/harinivas-28/AIML-Chatbot/main/namami.txt","r+", encoding='utf-8') as file:
+    with open("docs/namami.txt","r+", encoding='utf-8') as file:
         raw_text=file.read()
     # get pdf text
     # get the text chunks
