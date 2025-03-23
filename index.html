@@ -11,44 +11,347 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="https://pbs.twimg.com/profile_images/1670720350294884352/LbgyrxaV_400x400.jpg" type="image/x-icon">
   <style>
-    .chat-button {
-      display: inline-block;
-      line-height: 50px;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      border: solid 2px;
-  background-color: #4e57d4;
-  border: 2px solid;
-  border-radius: 50%;
-  color: white;
-  cursor: pointer;
-  font-size: 24px;
-  height: 60px;
-  position: fixed;
-  right: 30px; 
-  bottom: 30px;
-  transition: all 0.2s ease-in-out;
-  width: 60px;
-  z-index: 1;
-}
+    @font-face {
+      font-family: 'ClashDisplay-Variable';
+      src: url('../fonts/ClashDisplay-Variable.woff2') format('woff2'),
+          url('../fonts/ClashDisplay-Variable.woff') format('woff'),
+          url('../fonts/ClashDisplay-Variable.ttf') format('truetype');
+          font-weight: 200 700;
+          font-display: swap;
+          font-style: normal;
+    }
+    @import url(../css/clash-display.css);
+        /*VARIABLES*/
+        :root {
+            --c-dark:#212529;
+            --c-brand: #4e57d4;
+            --c-brand-light: #6970dd;
+            --c-brand-rgb: 78 ,87,212;
+            --c-body: #727272;
+            --font-base:"ClashDisplay",sans-serif;
+            --box-shadow:0px 15px 25px rgba(0,0,0,0.08);
+            --transition:all 0.5s ease;
 
-.chat-button:hover {
-  background-color: #ffffff;
-  transform: scale(1.1);
-  border-color: #4e57d4;
-}
+        }
+        /*RESET & HELPES*/
+        body{
+            font-family: var(--font-base);
+            line-height: 1.7;
+            color: var(--c-body);
+        }
 
-.chat-button:active {
-  background-color: #4e57d4;
-  border-color: white;
-  transform: scale(0.9);
-}
+        h1,h2,h3,h4,h5,h6,
+        .h1,.h2,.h3,.h4,.h5,.h6{
+            font-weight: 600;
+            color: var(--c-dark);
+        }
 
-.chat-button i {
-  margin-top: 16px;
-}
-        </style>
+        a{
+            text-decoration: none;
+            color: var(--c-brand);
+            transition: var(--transition);
+
+        }
+
+        a:hover{
+            color: var(--c-brand-light);
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .section-padding{
+            padding-top: 140px;
+            padding-bottom: 140px;
+        }
+
+        .theme-shadow{
+            box-shadow: var(--box-shadow);
+
+        }
+        /*image zoom*/
+        .image-zoom{
+            position: relative;
+            overflow: hidden;
+        }
+        .image-zoom-warpper{
+            overflow: hidden;
+            position: relative;
+        }
+        .image-zoom-warpper img{
+            transition: var(--transition);
+        }
+
+        .image-zoom:hover .image-zoom-warpper img{
+            transform: scale(1.1);
+        }
+        /*NAVBAR*/
+        .navbar{
+            box-shadow: var(--box-shadow);
+        }
+        .navbar-nav .nav-link{
+            font-weight: 500;
+            color: var(--c-dark);
+        }
+
+        .navbar-nav .nav-link.active{
+            color: var(--c-brand);
+        }
+
+        /*btn*/
+        .btn{
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-radius: 0;
+            padding: 10px 24px;
+        }
+        .btn-brand{
+            background-color: var(--c-brand);
+            border-color: var(--c-brand);
+            color: white;
+        }
+
+        .btn-brand:hover{
+            background-color: var(--c-brand-light);
+            border-color: var(--c-brand-light);
+            color: white;
+        }
+        /*HERO*/
+        #hero{
+            background: linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.438)),url(https://i.ibb.co/HDzRDTm/front.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        /*section tittle*/
+        .section-title{
+            margin-bottom: 60px;
+        }
+        .section-title .line{
+            width: 60px;
+            height: 4px;
+            background-color: var(--c-brand);
+            margin: 16px auto 24px auto;
+        }
+        .section-title p{
+            max-width: 500px;
+            margin-left: auto;
+            margin-right:auto ;
+        }
+        /*iconbox*/
+        .iconbox{
+            width: 70px;
+            height: 70px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background:rgba(var(--c-brand-rgb),0.1);
+            color: var(--c-brand);
+            font-size: 34px;
+            flex: none;
+        }
+        /*service*/
+        .service{
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        .service::after{
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: rgba(var(--c-brand-rgb),0.2);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transition: var(--transition);
+        }
+
+        .service:hover::after{
+            width: 100%;
+            height: 100%;
+            background: var(--c-brand);
+            z-index: -1;
+        }
+
+        .service:hover h5,
+        .service:hover p{
+            color: white;
+        }
+
+        .services:hover .iconbox{
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+        }
+        /*counter*/
+        #counter{
+            background: linear-gradient(rgba(var(--c-brand-rgb),0.8), rgba(var(--c-brand-rgb),0.8)),url(../images/c1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        /*portfolio*/
+        .portfolio-item .iconbox{
+            background-color: var(--c-brand);
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50% -50%);
+            opacity: 0;
+        }
+
+        .portfolio-item:hover .iconbox{
+            opacity: 1;
+            top: 50%;
+        }
+        /*review*/
+        .review-small{
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--c-brand);
+        }
+        .review-head{
+            position: relative;
+        }
+        .review-head::after{
+            content: "";
+            width: 28px;
+            height: 28px;
+            position: absolute;
+            bottom: -14px;
+            background-color:white;
+            transform: rotate(45deg);
+        }
+        /*team*/
+        .team-member-content{
+            background-color: var(--c-brand);
+            position: absolute;
+            bottom: -24px;
+            left: 50%;
+            width: calc(100% - 50px);
+            transform: translateX(-50%);
+            padding: 24px;
+            transition: var(--transition);
+            opacity: 0;
+        }
+        .team-member:hover .team-member-content{
+            opacity: 1;
+            bottom: 20px;
+        }
+        /*contact*/
+        #contact{
+            position: relative;
+            z-index: 2;
+        }
+        #contact::after{
+            content: "";
+            width: 100%;
+            height: 70%;
+            background: linear-gradient(rgba(var(--c-brand-rgb),0.8), rgba(var(--c-brand-rgb),0.8)),url(../images/one.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        #contact .form-control{
+            border-radius: 0;
+        }
+        #contact .form-control:focus{
+            box-shadow: none;
+            border-color: var(--c-brand);
+        }
+        /*footer*/
+        footer{
+            padding-top: 120px;
+        }
+        .footer-top{
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .footer-top img{
+            border-radius: 30%;
+        }
+        .footer-bottom{
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+        }
+        footer li
+        footer p,
+        footer a{
+            color: rgba(255,255,255,0.7);
+        }
+        footer ul{
+            list-style: none;
+            padding: 0;
+        }
+        .footer-top .h5{
+            color: white;
+        }
+        footer line{
+            width: 40px;
+            height: 4px;
+            background-color: var(--c-brand);
+            margin-top: 12px;
+            margin-bottom: 24px;
+        }
+        .social-icons a{
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255,255,255,0.08);
+            border-radius: 100%;
+        }
+        .social-icons a:hover{
+            background-color: var(--c-brand);
+            color: white;
+            
+        }
+          .chat-button {
+            display: inline-block;
+            line-height: 50px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border: solid 2px;
+            background-color: #4e57d4;
+            border: 2px solid;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            font-size: 24px;
+            height: 60px;
+            position: fixed;
+            right: 30px; 
+            bottom: 30px;
+            transition: all 0.2s ease-in-out;
+            width: 60px;
+            z-index: 1;
+      }
+
+      .chat-button:hover {
+        background-color: #ffffff;
+        transform: scale(1.1);
+        border-color: #4e57d4;
+      }
+
+      .chat-button:active {
+        background-color: #4e57d4;
+        border-color: white;
+        transform: scale(0.9);
+      }
+
+      .chat-button i {
+        margin-top: 16px;
+      }
+  </style>
 </head>
 <p id="chatbot"></p>
 <button class="chat-button"><img src="https://i.ibb.co/7ycxbWZ/chat-icon.png">
@@ -640,7 +943,18 @@
         </div>
       </div>
     </footer>
-
+    <script>
+      AOS.init({
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 900, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
