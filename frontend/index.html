@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chacha.com</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/1670720350294884352/LbgyrxaV_400x400.jpg" type="image/x-icon">
+  <style>
+    .chat-button {
+      display: inline-block;
+      line-height: 50px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      border: solid 2px;
+  background-color: #4e57d4;
+  border: 2px solid;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  height: 60px;
+  position: fixed;
+  right: 30px; 
+  bottom: 30px;
+  transition: all 0.2s ease-in-out;
+  width: 60px;
+  z-index: 1;
+}
+
+.chat-button:hover {
+  background-color: #ffffff;
+  transform: scale(1.1);
+  border-color: #4e57d4;
+}
+
+.chat-button:active {
+  background-color: #4e57d4;
+  border-color: white;
+  transform: scale(0.9);
+}
+
+.chat-button i {
+  margin-top: 16px;
+}
+        </style>
+</head>
+<p id="chatbot"></p>
+<button class="chat-button"><img src="https://i.ibb.co/7ycxbWZ/chat-icon.png">
+  </button>
+  <script>
+    document.querySelector('.chat-button').addEventListener('click', function() {
+      window.open('https://scorpio-ago3.onrender.com/', '_blank');
+    });
+  </script>
+  <body data-bs-spy="scroll" data-bs-target="#.navbar">
+    
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="https://i.ibb.co/gjd1FQs/final1.png">Chacha.com
+           <!--<img src="./assets/images/logo2.jpeg" alt="">-->
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero">Home</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              
+            </ul>
+            <a href="/profile" class="btn btn-brand ms-lg-3">Profile</a>
+          </div>
+        </div>
+      </nav>
+    <!--HERO-->
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <h1 class="text-uppercase text-white fw-semibold display-1">     Welcome to CHACHA.COM</h1>
+                    <!--text-white (should be included)-->
+                    <h5 class=" text-white mt-3 mb-4">The Perfect Mascot</h5>
+                    <div>
+                        <a href="https://scorpio-ago3.onrender.com/" class="btn btn-brand me-2" target="_blank" rel="noopener noreferrer">Get Started</a>
+                        <a href="#portfolio" class="btn btn-light ms-2">Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ABOUT-->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">About us</h1>
+              <div class="line"></div>
+              <P> A Tale of Namami Gange's Emblematic Mascot </P>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6">
+            <img src="https://i.ibb.co/xmTkBN7/resize1.jpg" alt="">
+          </div>
+          <div class="col-lg-5">
+            <h1>Chacha.com</h1>
+            <p class="mt-3 mb-4">Welcome to Chacha.com website, where our vibrant chatbot (Chacha Chaudhary) the mascot of our program, takes you on an enlightening journey. This unique platform not only offers insights into the Namami Gange initiative but also serves as a comprehensive resource for river conservation information. Through the chatbot's interactive guidance, users can effortlessly explore our efforts in rejuvenating the Ganges while accessing valuable resources on broader river conservation practices. Seamlessly blending information about our program and broader environmental concerns, this website ensures an enriching experience for those passionate about river conservation. Engage with our mascot chatbot to delve into the Namami Gange program and gain knowledge to support the cause of preserving our precious rivers.Impresive features of our bot are mentioned below
+            </p>
+            <div class="d-flex pt-4 mb-3">
+              <div class="iconbox me-4">
+                <i class="ri-mail-send-fill"></i>
+              </div>
+              <div>
+                <h5>Interactive Guidance:</h5>
+                <p>The chatbot offers interactive guidance, allowing users to navigate through the Namami Gange program seamlessly</p>
+              </div>
+            </div>
+            <div class="d-flex mb-3">
+              <div class="iconbox me-4">
+                <i class="ri-user-5-fill"></i>
+              </div>
+              <div>
+                <h5>Comprehensive Information:</h5>
+                <p>The chatbot serves as a repository of comprehensive information about river conservation and NMCG</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="iconbox me-4">
+                <i class="ri-rocket-2-fill"></i>
+              </div>
+              <div>
+                <h5>Personalized Support:</h5>
+                <p> It provides personalized support by understanding user queries and tailoring responses to individual needs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--services-->
+    <section id="services" class="section-padding border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">Services</h1>
+              <div class="line"></div>
+              <P>River Renewal Initiative: Namami Gange Services </P>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-4 col-sm-6">
+            <div class="service theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <i class="ri-stack-fill"></i>
+              </div>
+              <h5 class="mt-4 mb-3">Sewerage Treatment Infrastructure</h5>
+              <p>48 sewage management projects are under implementation and 99 sewage projects have been completed in many parts of INDIA.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="service theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <i class="ri-stack-fill"></i>
+              </div>
+              <h5 class="mt-4 mb-3">River-Front Development</h5>
+              <p>71 Ghats/Crematoria projects for construction, modernization, and renovation of 270 Ghats/Crematoria and Kunds/Ponds have been initiated.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="service theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <i class="ri-stack-fill"></i>
+              </div>
+              <h5 class="mt-4 mb-3">River-Surface Cleaning</h5>
+              <p>River Surface cleaning for collection of floating solid waste from the surface of the Ghats and River and its disposal are afoot and pushed into service at 11 locations.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="service theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <i class="ri-stack-fill"></i>
+              </div>
+              <h5 class="mt-4 mb-3">Bio-Diversity</h5>
+              <p>NMCG's Ganga rejuvenation vision aims to restore endemic and endangered biodiversity in the river. Projects involve the Wildlife Institute of India, Dehradun, Central Inland Fisheries Research Institute, Kolkata, and Uttar Pradesh State Forest Department. 
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="service theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <i class="ri-stack-fill"></i>
+              </div>
+              <h5 class="mt-4 mb-3">Industrial Effluent Monitoring</h5>
+              <p>Grossly Polluting Industries (GPIs) in April 2019 had 1072, inspected annually for compliance with environmental norms. Out of 961, 636 were complying, 110 non-compliant, and 215 self-closed.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="service theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <i class="ri-stack-fill"></i>
+              </div>
+              <h5 class="mt-4 mb-3">Ganga Gram</h5>
+              <p>The Ministry of Drinking Water and Sanitation has completed the construction of toilets in 1674 Gram Panchayats in five Ganga Basin States, out of a target of 15,275. The project is part of the National Mission for Clean Ganga, aiming to rejuvenate the Ganga.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--counter-->
+    <section id="counter" class="section-padding">
+      <div class="container text-center">
+        <div class="row g-4">
+          <div class="col-lg-3 col-sm-6">
+            <h1 class="text-white display-4">200+</h1>
+            <h6 class="text-uppercase mb-0 text-white mt-3">Projects</h6>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h1 class="text-white display-4">10+</h1>
+            <h6 class="text-uppercase mb-0 text-white mt-3">Partners</h6>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h1 class="text-white display-4">5M+</h1>
+            <h6 class="text-uppercase mb-0 text-white mt-3">Collaborators </h6>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h1 class="text-white display-4">1000+</h1>
+            <h6 class="text-uppercase mb-0 text-white mt-3">Team members</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Portfolio-->
+    <section id="portfolio" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">Our Portfolio</h1>
+              <div class="line"></div>
+              <P>Showcasing the innovative technologies employed to monitor and maintain the quality of water in the Ganges </P>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="portfolio-item theme-shadow image-zoom">
+              <div class="image-zoom-warpper">
+                <img src="https://i.ibb.co/WcqJbM3/galary1a.png">
+              </div>
+              <a href="https://ibb.co/30GZDjs" data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
+            </div>
+            <div class="portfolio-item theme-shadow image-zoom mt-4">
+              <div class="image-zoom-warpper">
+                <img src="https://i.ibb.co/wRVDrnP/galary2a.png">
+              </div>
+              <a href="https://ibb.co/R9fL4Xs" data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item theme-shadow image-zoom">
+              <div class="image-zoom-warpper">
+                <img src="https://i.ibb.co/7t6Q5Hy/galary3a.png">
+              </div>
+              <a href="https://ibb.co/b58FZxd" data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
+            </div>
+            <div class="portfolio-item theme-shadow image-zoom mt-4">
+              <div class="image-zoom-warpper">
+                <img src="https://i.ibb.co/1TCyDPq/galary4a.png">
+              </div>
+              <a href="https://ibb.co/CQjCkY7" data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item theme-shadow image-zoom">
+              <div class="image-zoom-warpper">
+                <img src="https://i.ibb.co/wSCFKvN/galary5.jpg
+                ">
+              </div>
+              <a href="https://ibb.co/0CZRfwj" data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
+            </div>
+            <div class="portfolio-item theme-shadow image-zoom mt-4">
+              <div class="image-zoom-warpper">
+                <img src="https://i.ibb.co/py9h3BR/galary6a.png">
+              </div>
+              <a href="https://ibb.co/rs1dZRc" data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--review-->
+    <section id="reviews" class="section-padding btn-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">Testimonials</h1>
+              <div class="line"></div>
+              <P>Discover what others are saying about NMCG's initiatives for a cleaner Ganga – real stories, real impact. </P>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-5 gx-4">
+          <div class="col-lg-4 col-sm-6">
+            <div class="review">
+              <div class="review-head p-4 bg-white theme-shadow">
+                <div class="text-warning">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p>The Ganga River's water quality has improved significantly in the last 5-6 years due to public participation, fostering a sense of faith and responsibility towards the river, resulting in increased satisfaction from devotees.
+                </p>
+              </div>
+              <div class="review-person mt-4 d-flex align-items-center">
+                <img class="rounded-circle" src="./assets/images/one.png" alt="">
+                <div class="ms-3">
+                  <h5>Shri Narendra Modi</h5>
+                  <small>Hon’ble Prime Minister</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="review">
+              <div class="review-head p-4 bg-white theme-shadow">
+                <div class="text-warning">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p>We are devoted to protect the rivers for our
+                  future generations. We have identified aim of
+                  ‘Aviral & Nirmal Dhara’ continuous and clean
+                  flow- as our tribute to river Ganga and we
+                  intend to extend this to all other rivers in the
+                  country.
+                </p>
+              </div>
+              <div class="review-person mt-4 d-flex align-items-center">
+                <img class="rounded-circle" src="./assets/images/one.png" alt="">
+                <div class="ms-3">
+                  <h5>Shri Gajendra Singh Shekhawat</h5>
+                  <small>Hon’ble Minister of Jal Shakti</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="review">
+              <div class="review-head p-4 bg-white theme-shadow">
+                <div class="text-warning">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p>I used to live in Bangalore.Seeing the filth on the banks of the ghat, she used to think that Mother Ganga can never be clean. But due to the untiring efforts of Namami Gange, Maa Ganga is flowing uninterrupted and clean again today.
+                  
+                </p>
+              </div>
+              <div class="review-person mt-4 d-flex align-items-center">
+                <img class="rounded-circle" src="./assets/images/one.png" alt="">
+                <div class="ms-3">
+                  <h5>Apurva</h5>
+                  <small>Law Student</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--team-->
+    <section id="team" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">Team Members</h1>
+              <div class="line"></div>
+              <P>Inspection of Team Members Initiated for Namami Gange Project</P>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 text-center">
+          <div class="col-md-4">
+            <div class="team-member image-zoom">
+              <div class="image-zoom-warpper">
+                <img src="https://i.ibb.co/tLYC68y/one.jpg" alt="">
+              </div>
+              <div class="team-member-content">
+                <h4 class="text-white">Shri G Asok Kumar</h4>
+                <p class="mb-0 text-white">General Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member image-zoom">
+              <div class="image-zoom-wrapper">
+                <a href="https://ibb.co/4mrJxVx"><img src="https://i.ibb.co/8KZXV7V/team2.png" alt="team2" border="0"></a>
+              </div>
+              <div class="team-member-content">
+                <h4 class="text-white">Shri Nalin Kumar Srivastava</h4>
+                <p class="mb-0 text-white">Deputy Director General</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member image-zoom">
+              <div class="image-zoom-wrapper">
+                <a href="https://ibb.co/tsRFhjP"><img src="https://i.ibb.co/58Zw9px/team3.png" alt="team3" border="0"></a>
+              </div>
+              <div class="team-member-content">
+                <h4 class="text-white">Shri Gajendra Singh Shekhawat</h4>
+                <p class="mb-0 text-white">Hon’ble Minister of Jal Shakti</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact-->
+    <section class="section-padding bg-light" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 text-white fw-semibold">SIGN-UP</h1>
+              <div class="line bg-white"></div>
+              <p class="text-white">Sign in to amplify your impact: Join the NMCG community in safeguarding the purity of the Ganga.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+              <div class="form-group col-lg-6">
+                <input type="text" class="form-control" placeholder="Enter First Name">
+              </div>
+              <div class="form-group col-lg-6">
+                <input type="text" class="form-control" placeholder="Enter Last Name">
+              </div>
+              <div class="form-group col-lg-12">
+                <input type="email" class="form-control" placeholder="Enter Email or Mobile Number">
+              </div>
+              <div class="form-group col-lg-12">
+                <input type="text" class="form-control" placeholder="Re-enter Email or Mobile Number">
+              </div>
+              <div class="form-group col-lg-12">
+                <textarea name="message"  class="form-control" placeholder="Enter Password"></textarea>
+                rows="5"
+              </div>
+              <div class="form-group col-lg-12 d-grid">
+                <button class="btn btn-brand">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> 
+ 
+
+    <!--blog-->
+    <section id="blog" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">LATEST NEWS..</h1>
+              <div class="line"></div>
+              <P>Currents of Change: Dive into the Latest News Unveiling NMCG's Ongoing Initiatives for the Ganges </P>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="team-member image-zoom">
+              <div class="image-zoom-wrapper">
+                <a href="https://ibb.co/w7zJHHL"><img src="https://i.ibb.co/Sc3QTTx/news1.jpg" alt="news1" border="0"></a>
+              </div>
+              <h5 class="mt-3">NGT says situation of water pollution grim, directs 100% treatment of sewage entering rivers </h5>
+              <p>Economic Times </p>
+              <a href="https://economictimes.indiatimes.com/news/politics-and-nation/ngt-says-situation-of-water-pollution-grim-directs-100-treatment-of-sewage-entering-rivers/articleshow/72402666.cms">Read more...</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member image-zoom">
+              <div class="image-zoom-wrapper">
+                <a href="https://ibb.co/6NY5DpT"><img src="https://i.ibb.co/N7xzWkJ/newsb.png" alt="newsb" border="0"></a>
+              </div>
+              <h5 class="mt-3">MoU inked for Ganga's conservation</h5>
+              <p>Times Of India </p>
+              <a href="https://timesofindia.indiatimes.com/city/patna/mou-inked-for-gangas-conservation/articleshow/101849024.cms">Read more...</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member image-zoom">
+              <div class="image-zoom-wrapper">
+                <a href="https://ibb.co/xgB4tx8"><img src="https://i.ibb.co/ykZ3cHB/newsa1.png" alt="newsa1" border="0"></a>
+              </div>
+              <h5 class="mt-3">Cities along rivers urged to include conservation plans</h5>
+              <p>The Hindu  </p>
+              <a href="https://www.thehindu.com/news/national/cities-along-rivers-urged-to-include-conservation-plans/article35149029.ece">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer id="footer" class="bg-dark">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-lg-3 col-sm-6">
+              <a href="#"><img src="https://i.ibb.co/KK0hzLR/foot.png">Chacha.com</a>
+              <div class="line"></div>
+              <p>The Website which provides you 
+                the information about Namami Gange Project
+                and River Conservation
+              </p>
+              <div class="social-icons">
+                <a href="https://twitter.com/cleanganganmcg"><i class="ri-twitter-fill"></i></a>
+                <a href="https://www.instagram.com/namamigange/"><i class="ri-instagram-fill"></i></a>
+                <a href="https://www.facebook.com/cleanganganmcg"><i class="ri-facebook-fill"></i></a>
+                <a href="https://www.youtube.com/channel/UCdslrfFfeUDBQHNPDK6q8YQ"><i class="ri-youtube-fill"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+               <h5 mb-0 text-white>SERVICES</h5>
+              <div class="line">
+                <ul>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#reviews">Reviews</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h5 mb-0>About</h5>
+              <div class="line">
+                <ul>
+                  <li><a href="#">Phone:-: +91-11-23072900-901</a></li>
+                  <li><a href="#">Email:- admn(dot)nmcg(at)nic(dot)in</a></li>
+                  <li><a href="#">Location:- National Mission for Clean Ganga
+                    Ministry of Jal Shakti
+                     Government of India
+                    1st Floor, Major Dhyan Chand National Stadium
+                    India Gate, New Delhi - 110002</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h5 mb-0 text-white>About</h5>
+              <div class="line">
+                <ul>
+                  <li><iframe
+                    width="350"
+                    height="250"
+                   style="border:0"
+                   loading="lazy"
+                   allowfullscreen
+                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1903.5591894784025!2d78.6159299!3d17.4061057!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2d9ca464087%3A0x93606aa8892b425!2sNational%20Mission%20for%20Clean%20Ganga!5e0!3m2!1sen!2sin!4v1701754991691!5m2!1sen!2sin"
+                   allowfullscreen=""
+                   loading="lazy"
+           ></iframe></li>
+                </ul>
+              </div>
+            </div>
+
+           <!-- <div class="col-lg-3 col-sm-6">
+              <h5 mb-0 text-white>SERVICES</h5>
+              <div class="line">
+                <ul>
+                  <li><a href="#">UI design</a></li>
+                  <li><a href="#">UX design</a></li>
+                  <li><a href="#">Branding</a></li>
+                  <li><a href="#">Logo designing</a></li>
+                </ul>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row g-4 justify-content-between">
+            <div class="col-auto">
+              <p class="mb-0">Content Provided by NMCG @ All right reserved.</p>
+            </div>
+            <div class="col-auto">
+              <p class="mb-0">Designed By :<a href="#">G165</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </body>
+</html>
